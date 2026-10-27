@@ -15,7 +15,7 @@
   <header class="site-header">
     <a class="wordmark" href="./" aria-label="Yixuan Liu, home">Yixuan Liu</a>
     <nav class="navigation" aria-label="Main navigation">
-      <a class="nav-item active" href="#main" aria-current="page"><img src="assets/work-icon.svg" alt="" width="14" height="14">Work</a>
+      <a class="nav-item active" href="#work" aria-current="page"><img src="assets/work-icon.svg" alt="" width="14" height="14">Work</a>
       <button class="nav-item" type="button" data-open="play">Play</button>
       <button class="nav-item" type="button" data-open="about">About</button>
     </nav>
@@ -50,6 +50,23 @@
         <span class="board-caption" aria-hidden="true">a few things that make me, me.</span>
       </div>
     </section>
+    <section class="selected-work" id="work" aria-label="Selected work">
+      <article class="project" aria-labelledby="fnha-title">
+        <div class="project-media">
+          <a class="project-cover" href="https://trestle-fnha-web.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="See my project: First Nations Health Authority (opens in a new tab)">
+            <video class="project-video" data-project-video muted loop playsinline preload="metadata" poster="assets/fnha-poster.webp" width="1280" height="720" aria-hidden="true" tabindex="-1">
+              <source src="assets/fnha-preview.mp4" type="video/mp4">
+            </video>
+            <span class="project-cta">See my project <span aria-hidden="true">↗</span></span>
+          </a>
+          <button class="preview-toggle" type="button" aria-label="Play project preview" hidden><span class="preview-toggle-icon" aria-hidden="true">▶</span><span class="preview-toggle-label">Play preview</span></button>
+        </div>
+        <div class="project-caption">
+          <h2 id="fnha-title"><a href="https://trestle-fnha-web.vercel.app/" target="_blank" rel="noopener noreferrer">First Nations Health Authority</a></h2>
+          <p>Mental Health and Primary Care Service Platform</p>
+        </div>
+      </article>
+    </section>
     <footer class="site-footer"><span>Thoughtfully designed, always curious.</span><a href="https://github.com/yixuan021" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></footer>
   </main>
   <dialog id="about" aria-labelledby="about-title">
@@ -76,5 +93,6 @@
     <p>My aim: digital products that feel simple, thoughtful, and meaningful.</p>
     <button class="text-link close-action" type="button">Back to the board ↗</button>
   </dialog>
+  <div class="project-cursor" aria-hidden="true">See my project <span>↗</span></div>
 </body>
 </html>
