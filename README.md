@@ -35,3 +35,19 @@ Process images are in `assets/fnha-case/`. Editing links to source decks and int
 ### Additional research evidence
 
 The case study now includes the July 7 mobile task scenario (Prince George, Indigenous provider, current availability or a wait under one month, then save), co-planning responsibilities with Bam, and the expandable-map testing hypothesis. Overall participation (35+) is distinguished from the 33 complete questionnaires in the results analysis. Survey results are self-reported within a guided test, not a post-redesign or production comparison. The art/design research supports the new wireframe and design-foundations content; artwork is credited to the team with Andrea as art lead. Source PDFs and raw participant-level observations remain outside the public repository.
+
+## ELEVARE Connect case study
+
+The second homepage card links to `elevare.html`, covering Project 1C in November–December 2025. The case study shares FNHA’s nine-section structure, typography, dimensions, responsive rules, image viewer, section navigation, and video controls. `elevare.css` supplies a blue palette without changing the shared geometry.
+
+The case study highlights Yixuan’s documented onboarding, learning progress, feedback UI, personas, UI breakdowns, user flows, technical research, and AI Bot interview contributions. Only the High Fidelity Onboarding and Playtest pages are displayed from Figma. Team implementation and individual contributions are distinguished. Fictional scenario percentages are not reported as measured product outcomes.
+
+`assets/elevare-preview.mp4` is a silent 10-second looping montage made from original high-fidelity Onboarding exports and the Playtest summary. Its opening and closing compositions match. It is an interface presentation, not a recording of a live AI conversation. `assets/elevare-poster.webp` is the static fallback; `assets/elevare-case/` contains optimised interface and process images. Both homepage previews have independent controls, pause off-screen, and respect reduced motion.
+
+Sources are limited to Google Docs tabs marked [EXPORT], the supplied presentation, Figma design pages, and the four supplied process photos. Private source documents and raw interview records are not included in the public assets.
+
+The four process photographs use compact, cropped previews (600px maximum width on desktop). Clicking opens the full uncropped image in the shared image viewer.
+
+The AI Bot TDD confirms a developed Unity 2023.2.20 Windows desktop prototype at 1280×720, with free-text input, Google Apps Script/JSON communication with Gemini 2.0 Flash, live replies, and end-of-conversation feedback. The case study prominently connects this implementation to the High Fidelity Playtest interaction flow, while identifying the Figma screens as mobile-format interface designs. The separate narrative browser prototype uses authored dialogue and Firebase two-player synchronisation; it does not generate dialogue live. The source TDDs remain outside the public repository.
+
+The Team field identifies Project 1C as a CDM project. The personal narrative foregrounds Yixuan’s documented UI contributions, personas and flows, and AI Bot interviews. The reflection section connects these artifacts with transferable product design strengths and grounded lessons, without attributing the Unity engineering or shared design system to Yixuan.

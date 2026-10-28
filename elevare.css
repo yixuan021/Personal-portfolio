@@ -1,0 +1,44 @@
+/* ELEVARE palette only. Geometry and interactions come from the shared case study. */
+.elevare-page{--case-ink:#193b52;--case-muted:#5c7382;--case-paper:#f1f6fa;--case-line:#dfe8ef;color:#263c4a}
+.elevare-page .case-hero{background:radial-gradient(ellipse at 24% 20%,#f4f9fc 0%,#e2eef7 60%,#c8deed 100%)}
+.elevare-page .hero-grain{background:linear-gradient(130deg,transparent 40%,#91b7d21c 40%,#91b7d21c 40.15%,transparent 40.15%)}
+.elevare-page .back-link,.elevare-page .case-details>div,.elevare-page .research-note,.elevare-page .image-dialog{background:#f3f7fa}
+.elevare-page .back-link:hover,.elevare-page .delivery-links a:hover{background:#e2eef6}
+.elevare-page .header-demo,.elevare-page .hero-note,.elevare-page .case-deck,.elevare-page .contribution-summary p,.elevare-page .story-section>p{color:#5c7382}
+.elevare-page .case-tags span{border-color:#dfe8ef;color:#5c7382}
+.elevare-page .case-tags span:first-child{background:#eaf3f9;border-color:#eaf3f9;color:#315e79}
+.elevare-page .contribution-summary strong,.elevare-page .story-section strong,.elevare-page .story-section h3{color:#315e79}
+.elevare-page .small-label,.elevare-page .case-details dt,.elevare-page .section-kicker,.elevare-page .decision-index,.elevare-page .ownership-tag{color:#6a879a}
+.elevare-page .case-contents a:hover,.elevare-page .case-contents a[aria-current="location"]{color:#315e79;border-left-color:#6d9fbe}
+.elevare-page .phone-shell,.elevare-page .decision-screen{border-color:#19394e;background:#19394e}
+.elevare-page .hmw-block{background:#eaf3f9;border-left-color:#83adc7}
+.elevare-page .hmw-block p{color:#315e79}
+.elevare-page .process-cards li,.elevare-page .process-cards li:nth-child(5),.elevare-page .decision-visual{background:#eef5fa;border-color:#dfe8ef}
+.elevare-page .process-cards li:nth-child(2),.elevare-page .decision-card:nth-child(2) .decision-visual{background:#f5f3ef;border-color:#e8e3da}
+.elevare-page .process-cards li:nth-child(3),.elevare-page .decision-card:nth-child(3) .decision-visual{background:#edf4f6;border-color:#dce8ed}
+.elevare-page .process-cards li:nth-child(4){background:#f2f1f7;border-color:#e4e0ef}
+.elevare-page .process-step,.elevare-page .process-step>span,.elevare-page .process-output,.elevare-page .decision-evidence,.elevare-page .visual-annotation{color:#456e89}
+.elevare-page .process-cards p,.elevare-page .insight-list p,.elevare-page .scope-comparison p,.elevare-page .iteration-list p,.elevare-page .reflection-list p,.elevare-page .decision-copy p,.elevare-page .test-ownership p{color:#617b8b}
+.elevare-page .mobile-showcase{background:radial-gradient(ellipse at 40% 20%,#edf6fc,#dceaf4)}
+.elevare-page .mobile-showcase figcaption,.elevare-page .decision-visual figcaption,.elevare-page .iteration-bridge p{color:#637f92}
+.elevare-page .visual-annotation{background:#ffffff90;border-color:#cddfea}
+.elevare-page .iteration-bridge,.elevare-page .decision-card,.elevare-page .scope-comparison>div,.elevare-page .process-output,.elevare-page .test-ownership,.elevare-page .image-dialog-header,.elevare-page .case-footer{border-color:#dce7ef}
+.elevare-page .test-ownership,.elevare-page .delivery-links a{background:#f1f6fa}
+.elevare-page .delivery-links a{border-color:#dce7ef}
+.elevare-page .delivered{color:#456e89;background:#e5f1f9}
+.elevare-page .case-footer a,.elevare-page .case-sources summary,.elevare-page .image-dialog-header h2{color:#456e89}
+.elevare-page .image-dialog-header button{background:#e7f0f7;color:#456e89}
+.elevare-page .zoom-image{background:#f5f8fb;border-color:#dfe8ef}
+@media(max-width:760px){.elevare-page .case-contents a[aria-current="location"]{border-bottom-color:#6d9fbe}}
+/* Compact process photography; the image viewer retains the complete original. */
+.elevare-page .process-photo{max-width:600px;margin:30px auto}
+.elevare-page .process-photo .zoom-image{aspect-ratio:16/9}
+.elevare-page .process-photo img{width:100%;height:100%;object-fit:cover}
+.elevare-page .process-photo .photo-paper-prototype{object-position:50% 62%}
+.elevare-page .process-photo .photo-whiteboard-flow{object-position:50% 54%}
+.elevare-page .process-photo .photo-prototype-testing{object-position:50% 55%}
+.elevare-page .process-photo .photo-testing-session{object-position:50% 58%}
+@media(max-width:760px){.elevare-page .process-photo{max-width:100%;margin:24px auto}.elevare-page .process-photo .zoom-image{aspect-ratio:4/3}}
+.elevare-page .process-photo:has(.photo-paper-prototype){max-width:480px}
+.elevare-page .process-photo:has(.photo-paper-prototype) .zoom-image{aspect-ratio:4/3}
+.elevare-page .process-photo .photo-paper-prototype{object-position:50% 45%}

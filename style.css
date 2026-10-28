@@ -16,3 +16,7 @@ dialog{border:0;border-radius:16px;padding:54px 44px 40px;max-width:500px;width:
 @media(hover:none),(pointer:coarse){.project-cta{opacity:1;transform:none}.project-cursor{display:none}}
 @media(max-width:1100px) and (min-width:761px){.selected-work{margin:130px 40px 0}.project-caption{gap:20px}.project-caption h2,.project-caption p{font-size:12px}}
 @media(max-width:760px){.selected-work{margin:100px 24px 0;scroll-margin-top:24px}.project-media{aspect-ratio:1.25}.project-video{width:94%;border-radius:4px;box-shadow:0 8px 24px #2541381a}.project-caption{display:block;margin-top:14px}.project-caption h2{font-size:13px}.project-caption p{font-size:11px;line-height:1.6;margin-top:4px;max-width:300px}.project-cta{opacity:1;transform:none;right:12px;bottom:12px;font-size:10px;gap:10px;padding:8px 11px}.project-cta span{font-size:16px}.preview-toggle{left:12px;bottom:12px;font-size:9px;padding:8px 10px}.preview-toggle-label{display:none}.site-footer{margin-top:80px}}
+
+/* Shared project dimensions; ELEVARE uses its own blue palette. */
+.project + .project{margin-top:80px}.project-elevare .project-media{background:#e4eff7}.project-elevare .project-cover{background:radial-gradient(ellipse at 30% 20%,#f2f8fc 0%,#e4eff7 65%,#d3e5f1 100%)}
+@media(max-width:760px){.project + .project{margin-top:52px}}
