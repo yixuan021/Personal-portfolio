@@ -8,7 +8,7 @@
   <title>FNHA — Yixuan Liu</title>
   <link rel="icon" href="assets/cursor.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="case-study.css?v=research-evidence-2">
+  <link rel="stylesheet" href="case-study.css?v=research-context-3">
   <script src="case-study.js" defer></script>
 </head>
 <body class="case-page">
@@ -44,7 +44,7 @@
       </dl>
       <div class="contribution-summary">
         <span class="small-label">MY CONTRIBUTION</span>
-        <p>I focused on <strong>early UX research, mobile interface design, and user test planning</strong>. The platform, visual system, development, and final handoff were a collaborative team effort.</p>
+        <p>I focused on <strong>early UX research, mobile interface design, and user test planning</strong>. My research combined case-study reviews and published statistics to help define the problem and frame our design question. The platform, visual system, development, and final handoff were a collaborative team effort.</p>
       </div>
     </div>
 
@@ -64,18 +64,39 @@
           <span class="section-kicker">01 / THE CHALLENGE</span>
           <h2>A directory can hold the answer.<br>That doesn't make it easy to find.</h2>
           <p>FNHA's existing provider information was available through a spreadsheet and a map. Finding support meant sorting through names, interpreting unfamiliar designations, and working out whether a provider was available and appropriate.</p>
-          <p>Our challenge was to turn that information into a clearer discovery experience: one that supported personal, cultural, and practical needs without asking people to become experts in the directory first.</p>
+          <div class="problem-statement"><span class="small-label">PROBLEM STATEMENT</span><p>First Nations community members often <strong>struggle to find the right mental health provider</strong>. Existing provider information is difficult to search, compare, and trust, creating barriers to accessing timely, culturally appropriate care.</p></div>
           <figure class="case-figure before-figure">
             <button class="zoom-image" type="button" data-zoom="assets/fnha-case/before-platform.webp" aria-label="Enlarge the existing spreadsheet and map interfaces"><img src="assets/fnha-case/before-platform.webp" alt="The existing provider spreadsheet, map instructions, and map interface shown in our final presentation" width="650" height="202" loading="lazy"></button>
             <figcaption>The starting point: comprehensive information, spread across a spreadsheet and map. From the team's final presentation.</figcaption>
           </figure>
-          <div class="hmw-block"><span class="small-label">OUR DESIGN QUESTION</span><p>How might we help people find a suitable mental health provider with less effort and more confidence?</p></div>
+          <div class="hmw-block"><span class="small-label">OUR DESIGN QUESTION</span><p>How might we help FNHA users quickly discover and confidently choose a mental health provider that <strong>best matches their needs</strong> while <strong>reducing cognitive load</strong> and <strong>making the search experience intuitive and culturally supportive</strong>?</p></div>
         </section>
 
         <section class="story-section" id="research">
           <span class="section-kicker">02 / UNDERSTANDING NEEDS</span>
           <h2>Start with the person.<br>Then simplify the search.</h2>
-          <p>My early research work helped frame the problem around the experience of seeking care. We examined the existing directory, explored accessibility and cultural safety considerations, and used personas and journey mapping to identify where the search could become difficult.</p>
+          <p>I worked on the early UX research, bringing together <strong>case-study reviews and online secondary research</strong> to understand the context behind the search experience. I used that work to help articulate the problem statement and HMW, before the team explored solutions.</p>
+          <div class="research-methods">
+            <span class="small-label">HOW I APPROACHED THE RESEARCH</span>
+            <ol>
+              <li><span class="method-number">01</span><div><h3>Review case studies &amp; existing experiences</h3><p>I reviewed comparable healthcare directories and the existing FNHA spreadsheet and map, looking at how people search, narrow options, and compare provider information.</p></div></li>
+              <li><span class="method-number">02</span><div><h3>Find published evidence online</h3><p>I gathered background statistics and reviewed research on healthcare access, mental health needs, accessibility, and cultural safety to understand the wider context.</p></div></li>
+              <li><span class="method-number">03</span><div><h3>Turn research into a focused question</h3><p>I connected the background evidence with friction in the existing experience to help frame our problem: make it easier to discover, compare, and choose a suitable provider. The team used personas and journey mapping to explore that direction.</p></div></li>
+            </ol>
+          </div>
+          <div class="background-evidence">
+            <span class="small-label">BACKGROUND RESEARCH / WHY THIS MATTERS</span>
+            <h3>Access is about more than a list of names.</h3>
+            <div class="context-scale"><strong>230,000+</strong><div><p>First Nations citizens across urban, rural, and remote BC, within FNHA's service context.</p><a href="https://annualreport.fnha.ca/" target="_blank" rel="noopener noreferrer">Source: FNHA annual report website ↗</a></div></div>
+            <p class="population-label">NATIONAL CONTEXT · FIRST NATIONS PEOPLE LIVING OFF RESERVE, AGE 15+ · 2024</p>
+            <div class="background-stat-grid">
+              <div><strong>32%</strong><p>reported unmet healthcare needs in the previous 12 months.</p><span>ACCESS TO CARE</span></div>
+              <div><strong>47%</strong><p>reported needing mental healthcare in the previous 12 months.</p><span>MENTAL HEALTH NEEDS</span></div>
+              <div><strong>86%</strong><p>said services supporting Indigenous traditional medicines, healing, and wellness practices were important.</p><span>CULTURALLY SUPPORTIVE CARE</span></div>
+            </div>
+            <p class="evidence-source">Source: <a href="https://www150.statcan.gc.ca/n1/daily-quotidien/241104/dq241104a-eng.htm" target="_blank" rel="noopener noreferrer">Statistics Canada, Health care access and experiences among Indigenous people, 2024 ↗</a>. Figures are rounded national survey estimates, not BC-specific findings or our usability-test results. The source notes a risk of non-response bias.</p>
+            <div class="research-implication"><span class="small-label">WHAT I TOOK INTO THE DESIGN</span><p>These findings helped frame availability, understandable provider details, and culturally relevant preferences as important design questions. They establish the wider need; our usability testing examined how people navigated the proposed directory.</p></div>
+          </div>
           <div class="insight-list">
             <div><span>01</span><h3>Too much information competes for attention.</h3><p>Provider names, credentials, filters, and map pins all demanded interpretation. We needed a clearer hierarchy and fewer decisions at the start.</p></div>
             <div><span>02</span><h3>Trust depends on practical details.</h3><p>Availability, cultural safety indicators, service format, and clear next steps needed to be easier to find and compare.</p></div>
