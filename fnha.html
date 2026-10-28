@@ -8,7 +8,7 @@
   <title>FNHA — Yixuan Liu</title>
   <link rel="icon" href="assets/cursor.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="case-study.css?v=research-context-3">
+  <link rel="stylesheet" href="case-study.css?v=visual-story-4">
   <script src="case-study.js" defer></script>
 </head>
 <body class="case-page">
@@ -52,12 +52,14 @@
       <nav class="case-contents" aria-label="Case study sections">
         <span>IN THIS CASE STUDY</span>
         <a href="#context">01 · The challenge</a>
-        <a href="#research">02 · Understanding needs</a>
-        <a href="#internal-testing">03 · Testing the direction</a>
-        <a href="#pivot">04 · The scope decision</a>
-        <a href="#mobile-design">05 · Designing for mobile</a>
-        <a href="#external-testing">06 · Learning and iterating</a>
-        <a href="#delivery">07 · Delivery & reflection</a>
+        <a href="#design-process">02 · Design Process</a>
+        <a href="#research">03 · Research Insights</a>
+        <a href="#internal-testing">04 · Testing the direction</a>
+        <a href="#pivot">05 · The scope decision</a>
+        <a href="#mobile-design">06 · Designing for mobile</a>
+        <a href="#design-decisions">07 · Key Design Decisions</a>
+        <a href="#external-testing">08 · Learning and iterating</a>
+        <a href="#delivery">09 · Delivery & reflection</a>
       </nav>
       <article class="case-story">
         <section class="story-section" id="context">
@@ -72,9 +74,23 @@
           <div class="hmw-block"><span class="small-label">OUR DESIGN QUESTION</span><p>How might we help FNHA users quickly discover and confidently choose a mental health provider that <strong>best matches their needs</strong> while <strong>reducing cognitive load</strong> and <strong>making the search experience intuitive and culturally supportive</strong>?</p></div>
         </section>
 
+        <section class="story-section" id="design-process">
+          <span class="section-kicker">02 / FROM RESEARCH TO DELIVERY</span>
+          <h2>Design Process</h2>
+          <p>Research shaped the question. Testing helped us decide what deserved to stay. Across May–August 2026, we moved through these stages together.</p>
+          <ol class="process-cards">
+            <li><span class="process-step">01 <span>DISCOVER</span></span><h3>Understand the context</h3><p>Case-study reviews, published statistics, and the existing directory.</p><span class="process-output">Research foundation</span><span class="ownership-tag">MY FOCUS · UX RESEARCH</span></li>
+            <li><span class="process-step">02 <span>DEFINE</span></span><h3>Frame the problem</h3><p>Problem statement, HMW, personas, and journey mapping.</p><span class="process-output">A focused design question</span><span class="ownership-tag">MY FOCUS · PROBLEM FRAMING</span></li>
+            <li><span class="process-step">03 <span>EXPLORE &amp; DESIGN</span></span><h3>Make the direction tangible</h3><p>Wireframes, search concepts, and mobile interface design.</p><span class="process-output">Testable prototypes</span><span class="ownership-tag">MY FOCUS · MOBILE UI</span></li>
+            <li><span class="process-step">04 <span>TEST &amp; REFINE</span></span><h3>Learn from real tasks</h3><p>Internal testing, scope discussions, and external usability feedback.</p><span class="process-output">Evidence for iteration</span><span class="ownership-tag">MY FOCUS · TEST PLANNING</span></li>
+            <li><span class="process-step">05 <span>DELIVER</span></span><h3>Support the handoff</h3><p>Provider discovery platform, an extra admin website, and documentation.</p><span class="process-output">A maintainable directory</span><span class="ownership-tag team-tag">TEAM DELIVERY</span></li>
+          </ol>
+          <div class="iteration-bridge"><span aria-hidden="true">↳</span><p><strong>Testing fed back into the design.</strong> The team reconsidered the map and filters, explored offline support, and aligned the final scope with the client.</p></div>
+        </section>
+
         <section class="story-section" id="research">
-          <span class="section-kicker">02 / UNDERSTANDING NEEDS</span>
-          <h2>Start with the person.<br>Then simplify the search.</h2>
+          <span class="section-kicker">03 / UNDERSTANDING NEEDS</span>
+          <h2>Research Insights</h2>
           <p>I worked on the early UX research, bringing together <strong>case-study reviews and online secondary research</strong> to understand the context behind the search experience. I used that work to help articulate the problem statement and HMW, before the team explored solutions.</p>
           <div class="research-methods">
             <span class="small-label">HOW I APPROACHED THE RESEARCH</span>
@@ -97,21 +113,30 @@
             <p class="evidence-source">Source: <a href="https://www150.statcan.gc.ca/n1/daily-quotidien/241104/dq241104a-eng.htm" target="_blank" rel="noopener noreferrer">Statistics Canada, Health care access and experiences among Indigenous people, 2024 ↗</a>. Figures are rounded national survey estimates, not BC-specific findings or our usability-test results. The source notes a risk of non-response bias.</p>
             <div class="research-implication"><span class="small-label">WHAT I TOOK INTO THE DESIGN</span><p>These findings helped frame availability, understandable provider details, and culturally relevant preferences as important design questions. They establish the wider need; our usability testing examined how people navigated the proposed directory.</p></div>
           </div>
-          <div class="insight-list">
-            <div><span>01</span><h3>Too much information competes for attention.</h3><p>Provider names, credentials, filters, and map pins all demanded interpretation. We needed a clearer hierarchy and fewer decisions at the start.</p></div>
-            <div><span>02</span><h3>Trust depends on practical details.</h3><p>Availability, cultural safety indicators, service format, and clear next steps needed to be easier to find and compare.</p></div>
-            <div><span>03</span><h3>Desktop assumptions don't cover every context.</h3><p>Our early journey work considered phone use, varying digital confidence, and unstable internet connections. These became important questions for the next design iteration.</p></div>
+          <div class="visual-insights">
+            <article class="insight-card"><span class="insight-origin">01 / EXISTING EXPERIENCE REVIEW</span>
+              <div class="insight-art clutter-art" aria-hidden="true"><span>Credentials</span><span>Map pins</span><span>Provider names</span><span>Filters</span><b>Where do I start?</b></div>
+              <h3>Information needs a hierarchy.</h3><p>The spreadsheet and map asked people to interpret many signals at once.</p><div class="insight-takeaway"><span>DESIGN IMPLICATION</span><p>Start with a clear search, then reveal the detail needed to compare.</p></div>
+            </article>
+            <article class="insight-card"><span class="insight-origin">02 / PUBLISHED BACKGROUND RESEARCH</span>
+              <div class="insight-art culture-art" aria-hidden="true"><b>86<span>%</span></b><span>culturally supportive<br>care matters</span></div>
+              <h3>Fit includes cultural needs.</h3><p>National data highlighted the importance of services that support Indigenous healing and wellness practices.</p><div class="insight-takeaway"><span>DESIGN IMPLICATION</span><p>Make relevant provider information and preferences easier to understand.</p></div>
+            </article>
+            <article class="insight-card"><span class="insight-origin">03 / EARLY JOURNEY EXPLORATION</span>
+              <div class="insight-art journey-art" aria-hidden="true"><span>Search</span><i>→</i><span>Compare</span><i>→</i><span>Choose</span><b>One manageable step at a time.</b></div>
+              <h3>Context changes the experience.</h3><p>Phone use, digital confidence, and connectivity shaped the questions in our early journey work.</p><div class="insight-takeaway"><span>DESIGN IMPLICATION</span><p>Prioritize a readable mobile experience and test assumptions about each step.</p></div>
+            </article>
           </div>
+          <p class="source-note">The 86% figure refers to First Nations people living off reserve, age 15+, Canada, 2024; the linked source and survey limitations appear above. Directory review and journey exploration are qualitative inputs, not prevalence estimates.</p>
           <figure class="case-figure map-figure">
             <button class="zoom-image" type="button" data-zoom="assets/fnha-case/journey-map.png" aria-label="Enlarge the early user journey map"><img src="assets/fnha-case/journey-map.png" alt="Early journey map for the Kaya persona, documenting stages, pain points, emotional changes, and opportunities" width="2600" height="1110" loading="lazy"></button>
             <figcaption>Early journey mapping from our FigJam board. “Kaya” is a research-framing persona, not an interview transcript. Click to enlarge.</figcaption>
           </figure>
           <aside class="research-note"><strong>A constraint we had to acknowledge</strong><p>Direct access to the target community was limited. Desk research, personas, and broader usability feedback informed the work, but could not stand in for extensive research with First Nations communities.</p></aside>
-          <div class="process-line" aria-label="Project process"><span>Research</span><span>Explore</span><span>Test</span><span>Iterate</span><span>Validate</span><span>Handoff</span></div>
         </section>
 
         <section class="story-section" id="internal-testing">
-          <span class="section-kicker">03 / TESTING THE DIRECTION</span>
+          <span class="section-kicker">04 / TESTING THE DIRECTION</span>
           <h2>Test the assumptions<br>before polishing the interface.</h2>
           <p>We explored two directions: a guided search experience and a redesigned map with a provider list. My contribution included planning user testing. The team compared prototypes and visual directions, looking at how people searched, interpreted filters, and assessed provider information.</p>
           <div class="research-stats">
@@ -125,7 +150,7 @@
         </section>
 
         <section class="story-section" id="pivot">
-          <span class="section-kicker">04 / THE SCOPE DECISION</span>
+          <span class="section-kicker">05 / THE SCOPE DECISION</span>
           <h2>A useful idea still has<br>to be the right thing to build.</h2>
           <p>After internal testing, we discussed a mobile-first pivot that also considered unreliable connectivity. The proposal explored full internet, low internet, and offline experiences, including saved provider information and a possible SMS fallback.</p>
           <p>That exploration changed the conversation, but it did not become the final scope. <strong>The client did not need offline mode, so we did not proceed with it.</strong> Instead, the team delivered an additional admin website to support provider data management.</p>
@@ -134,7 +159,7 @@
         </section>
 
         <section class="story-section" id="mobile-design">
-          <span class="section-kicker">05 / MY MOBILE INTERFACE WORK</span>
+          <span class="section-kicker">06 / MY MOBILE INTERFACE WORK</span>
           <h2>Give the next step<br>room to be obvious.</h2>
           <p>I designed the mobile interface, focusing on a readable hierarchy and a clear path from searching to reviewing a provider. The team’s testing highlighted tight spacing, small touch targets, confusing filters, and weak feedback around saved providers.</p>
           <figure class="case-figure wireframe-figure">
@@ -159,12 +184,32 @@
             <figure><button class="phone-shell" type="button" data-zoom="assets/fnha-case/mobile-filters.webp" aria-label="Enlarge the mobile preferences panel"><img src="assets/fnha-case/mobile-filters.webp" alt="Mobile FNHA preference panel for narrowing provider results" width="360" height="720" loading="lazy"></button><figcaption>Refine the list without losing the task.</figcaption></figure>
           </div>
           <p class="source-note">Screens from the team's deployed web prototype. They show the responsive product, not a native app release.</p>
-          <div class="design-principles"><div><h3>Clarify what the search accepts.</h3><p>A city-specific prompt makes the input more predictable than a broad search box that appears to accept any healthcare keyword.</p></div><div><h3>Put decision-making information first.</h3><p>Availability, location, service format, and provider details give people a more useful basis for comparison.</p></div><div><h3>Keep the path to action visible.</h3><p>Separate browsing, refining, reviewing, and contacting a provider into understandable steps.</p></div></div>
           <details class="flow-details"><summary>View the team's detailed user flow <span aria-hidden="true">＋</span></summary><figure class="case-figure"><button class="zoom-image" type="button" data-zoom="assets/fnha-case/user-flow.png" aria-label="Enlarge the final user flow"><img src="assets/fnha-case/user-flow.png" alt="Final FigJam user flow from landing page through search, preferences, provider review, saving, and contact" width="1731" height="2200" loading="lazy"></button><figcaption>Final flow artifact from the team's FigJam board. Click to enlarge.</figcaption></figure></details>
         </section>
 
+        <section class="story-section" id="design-decisions">
+          <span class="section-kicker">07 / CONNECTING EVIDENCE TO THE INTERFACE</span>
+          <h2>Key Design Decisions</h2>
+          <p>My mobile interface work sat within a shared design process. These decisions connect the team's research and testing with the direction we took.</p>
+          <div class="decision-stack">
+            <article class="decision-card">
+              <div class="decision-copy"><span class="decision-index">01 / SEARCH</span><h3>Give search a clear starting point.</h3><div><span class="small-label">THE SIGNAL</span><p>In external testing, people tried broad terms such as “mental health” and “FNHA,” then encountered mismatched or empty results.</p></div><div><span class="small-label">THE DECISION</span><p>Make the entry point explicitly city-based, with preferences helping people refine the directory.</p></div><a href="#external-testing" class="decision-evidence">Read the test findings ↗</a></div>
+              <figure class="decision-visual"><span class="visual-annotation">START WITH A CITY</span><button class="decision-screen" type="button" data-zoom="assets/fnha-case/mobile-home.webp" aria-label="Enlarge city search on the mobile home screen"><img src="assets/fnha-case/mobile-home.webp" alt="Actual mobile home screen showing the city-based entry point" width="360" height="720" loading="lazy"></button><figcaption>A specific input sets a clearer expectation.</figcaption></figure>
+            </article>
+            <article class="decision-card">
+              <div class="decision-copy"><span class="decision-index">02 / FILTERS &amp; FIT</span><h3>Help people narrow choices with confidence.</h3><div><span class="small-label">THE SIGNAL</span><p>95.5% of internal respondents valued availability. Later, only 19 of 33 external respondents rated filters intuitive or very intuitive.</p></div><div><span class="small-label">THE DECISION</span><p>Prioritize availability and clearer preferences. Later documented iterations included simpler filter groups and an age-range slider.</p></div><a href="#internal-testing" class="decision-evidence">See the internal evidence ↗</a></div>
+              <figure class="decision-visual"><span class="visual-annotation">MAKE PREFERENCES VISIBLE</span><button class="decision-screen" type="button" data-zoom="assets/fnha-case/mobile-filters.webp" aria-label="Enlarge mobile filter preferences"><img src="assets/fnha-case/mobile-filters.webp" alt="Actual mobile preferences interface for narrowing provider results" width="360" height="720" loading="lazy"></button><figcaption>A valued feature still needs understandable choices.</figcaption></figure>
+            </article>
+            <article class="decision-card">
+              <div class="decision-copy"><span class="decision-index">03 / INFORMATION HIERARCHY</span><h3>Let the provider list do the work.</h3><div><span class="small-label">THE SIGNAL</span><p>People who noticed the map still questioned its value compared with tools such as Google Maps.</p></div><div><span class="small-label">THE DECISION</span><p>The team removed the map from the delivered experience. Provider cards put the information for comparing options back at the centre.</p></div><a href="#external-testing" class="decision-evidence">See how the direction evolved ↗</a></div>
+              <figure class="decision-visual"><span class="visual-annotation">COMPARE PROVIDERS DIRECTLY</span><button class="decision-screen" type="button" data-zoom="assets/fnha-case/mobile-directory.webp" aria-label="Enlarge the provider list design"><img src="assets/fnha-case/mobile-directory.webp" alt="Actual mobile directory with provider cards as the main browsing experience" width="360" height="720" loading="lazy"></button><figcaption>Keep practical provider details close to the decision.</figcaption></figure>
+            </article>
+          </div>
+          <p class="source-note">Screens show the team's deployed web prototype. Decisions and iterations are drawn from the project reports; no post-redesign improvement is claimed without a follow-up measurement.</p>
+        </section>
+
         <section class="story-section" id="external-testing">
-          <span class="section-kicker">06 / LEARNING AND ITERATING</span>
+          <span class="section-kicker">08 / LEARNING AND ITERATING</span>
           <h2>Something can be helpful<br>and still be hard to use.</h2>
           <div class="test-ownership">
             <span class="small-label">MY TEST-PLANNING CONTRIBUTION</span>
@@ -213,7 +258,7 @@
         </section>
 
         <section class="story-section" id="delivery">
-          <span class="section-kicker">07 / DELIVERY & REFLECTION</span>
+          <span class="section-kicker">09 / DELIVERY & REFLECTION</span>
           <h2>Support discovery.<br>Support the people maintaining it.</h2>
           <p>The team delivered the online provider discovery platform and an additional admin website. The final presentation also records a handoff of development resources, documentation, and video-based onboarding so the client could continue working with the platform.</p>
           <div class="delivery-links"><a href="https://trestle-fnha-web.vercel.app/" target="_blank" rel="noopener noreferrer"><span>PUBLIC EXPERIENCE</span><strong>Explore the directory ↗</strong></a><a href="https://trestle-fnha-admin.vercel.app/login?redirect=%2F" target="_blank" rel="noopener noreferrer"><span>STAFF EXPERIENCE · LOGIN REQUIRED</span><strong>Admin website ↗</strong></a></div>
