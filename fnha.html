@@ -8,7 +8,7 @@
   <title>FNHA — Yixuan Liu</title>
   <link rel="icon" href="assets/cursor.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="case-study.css">
+  <link rel="stylesheet" href="case-study.css?v=research-evidence-2">
   <script src="case-study.js" defer></script>
 </head>
 <body class="case-page">
@@ -116,6 +116,22 @@
           <span class="section-kicker">05 / MY MOBILE INTERFACE WORK</span>
           <h2>Give the next step<br>room to be obvious.</h2>
           <p>I designed the mobile interface, focusing on a readable hierarchy and a clear path from searching to reviewing a provider. The team’s testing highlighted tight spacing, small touch targets, confusing filters, and weak feedback around saved providers.</p>
+          <figure class="case-figure wireframe-figure">
+            <div class="wireframe-pair">
+              <button class="zoom-image" type="button" data-zoom="assets/fnha-case/wireframe-1.webp" aria-label="Enlarge the early mobile wireframe sketch"><img src="assets/fnha-case/wireframe-1.webp" alt="Team whiteboard sketch exploring mobile search, a directory list, filters, and provider details" loading="lazy"></button>
+              <button class="zoom-image" type="button" data-zoom="assets/fnha-case/wireframe-2.webp" aria-label="Enlarge the landing, directory and saved-provider sketches"><img src="assets/fnha-case/wireframe-2.webp" alt="Team wireframe sketches comparing landing, directory, saved-provider and mobile layouts" loading="lazy"></button>
+            </div>
+            <figcaption>Before high fidelity: shared wireframe explorations from the Art &amp; Design Research document. Click either sketch to enlarge.</figcaption>
+          </figure>
+          <details class="design-foundations">
+            <summary>How the research shaped the design system <span aria-hidden="true">＋</span></summary>
+            <div class="foundation-grid">
+              <div><span class="small-label">READABILITY</span><h3>BC Sans and a consistent hierarchy</h3><p>The product's design system selected BC Sans for legibility, with distinct styles for headings, body text, captions, and controls.</p></div>
+              <div><span class="small-label">COLOUR &amp; RECOGNITION</span><h3>Status needs words, too.</h3><p>Availability and service labels pair colour with text or other cues. Familiar action icons support search, filtering, saving, and contact.</p></div>
+              <div><span class="small-label">LANGUAGE &amp; CONTROL</span><h3>Predictable, supportive interactions</h3><p>Research into plain language and trauma-informed design informed clear explanations, manageable choices, and an experience people could explore at their own pace.</p></div>
+              <div><span class="small-label">SHARED VISUAL DIRECTION</span><h3>Warmth without generic symbolism</h3><p>The team explored calm colours, organic shapes, and themes of connection and support. Andrea led the art direction; culturally specific imagery was identified as work requiring appropriate consultation.</p></div>
+            </div>
+          </details>
           <div class="mobile-showcase" role="region" tabindex="0" aria-label="Mobile interface screens; scroll horizontally on small screens">
             <figure><button class="phone-shell" type="button" data-zoom="assets/fnha-case/mobile-home.webp" aria-label="Enlarge the mobile home screen"><img src="assets/fnha-case/mobile-home.webp" alt="Mobile FNHA home screen with city search, quick preferences, and a tutorial entry" width="360" height="720" loading="lazy"></button><figcaption>Start with a city and a few clear preferences.</figcaption></figure>
             <figure><button class="phone-shell" type="button" data-zoom="assets/fnha-case/mobile-directory.webp" aria-label="Enlarge the mobile directory"><img src="assets/fnha-case/mobile-directory.webp" alt="Mobile FNHA provider directory with search and provider cards" width="360" height="720" loading="lazy"></button><figcaption>Browse and scan provider information.</figcaption></figure>
@@ -129,13 +145,49 @@
         <section class="story-section" id="external-testing">
           <span class="section-kicker">06 / LEARNING AND ITERATING</span>
           <h2>Something can be helpful<br>and still be hard to use.</h2>
+          <div class="test-ownership">
+            <span class="small-label">MY TEST-PLANNING CONTRIBUTION</span>
+            <h3>Plan the task, the questions, and what to observe.</h3>
+            <p>I co-planned the external test with Bam. The July 7 plan assigned us responsibility for interview questions, the survey, task cards, prototype and survey checks, and the participant testing flow.</p>
+            <p>The planned session moved from a welcome and consent to a mobile or desktop task, a questionnaire, and observation notes. The interview prompts explored what information mattered, which filters felt confusing, and what helped people feel confident before contacting a provider.</p>
+          </div>
+          <div class="task-scenario">
+            <span class="small-label">THE ACTUAL MOBILE TEST SCENARIO</span>
+            <h3>Find support in Prince George.</h3>
+            <p>Find an Indigenous provider offering FNHA mental health support in Prince George, available now or with a wait of less than one month, and save the provider to your list.</p>
+            <ol class="task-steps">
+              <li><strong>Search the city</strong><span>Begin the provider search in Prince George.</span></li>
+              <li><strong>Apply availability needs</strong><span>Look for current availability or a wait under one month.</span></li>
+              <li><strong>Identify an Indigenous provider</strong><span>Use the relevant preference to narrow the list.</span></li>
+              <li><strong>Review provider information</strong><span>Assess whether the details match the scenario's needs.</span></li>
+              <li><strong>Save the provider</strong><span>Add the selected option to the saved list.</span></li>
+            </ol>
+            <p class="scenario-note">Five actions within one end-to-end scenario; participants could take different routes.</p>
+          </div>
+          <div class="mobile-test-question">
+            <span class="small-label">A SPECIFIC MOBILE DESIGN QUESTION</span>
+            <h3>Would an expandable map clarify the screen—or add another step?</h3>
+            <p>At this prototype stage, mobile used a list with an expandable full-screen map; desktop used a side-by-side map and list. The test plan asked whether people noticed the mobile toggle without prompting, whether the interaction matched their expectations, and whether the extra view helped with efficiency, confidence, or cognitive load.</p>
+          </div>
           <p>The external testing round involved <strong>35+ participants, including 3 First Nations users</strong>. It exposed a gap between valuing a feature and understanding how to use it, particularly around filters and map-based discovery.</p>
+          <p class="source-note">The event participation count above is distinct from the results report's 33 completed questionnaires. The survey figures below use n = 33.</p>
+          <div class="external-evidence">
+            <div class="completion-summary"><strong>28<span>/33</span></strong><div><h3>reported completing the task</h3><p>3 reported partial completion and 2 did not complete it. This was a guided, in-person usability test—not a production conversion rate.</p></div></div>
+            <div class="filter-comparison">
+              <span class="small-label">RATED INTUITIVE OR VERY INTUITIVE</span>
+              <div class="comparison-row"><span>Filters</span><meter min="0" max="33" value="19" aria-label="19 of 33 respondents rated filters intuitive or very intuitive">19 of 33</meter><strong>58% <small>19/33</small></strong></div>
+              <div class="comparison-row"><span>Search</span><meter min="0" max="33" value="27" aria-label="27 of 33 respondents rated search intuitive or very intuitive">27 of 33</meter><strong>82% <small>27/33</small></strong></div>
+              <p>Yet <strong>21 of 33</strong> respondents named filters among the most helpful features. The priority was to improve a valued interaction, rather than remove it.</p>
+            </div>
+          </div>
           <div class="iteration-list">
             <div><span>SEARCH</span><h3>Broad-looking search created false expectations.</h3><p>People tried terms such as “mental health” and “FNHA,” then encountered mismatched or empty results. The design direction shifted toward an explicit city search and clearer guidance.</p></div>
-            <div><span>FILTERS</span><h3>Important controls were too hard to interpret.</h3><p>Long categories, unclear designation labels, and uncertainty about combining selections increased effort. We worked toward a clearer hierarchy and simpler filtering.</p></div>
-            <div><span>MAP</span><h3>The early preference didn't settle the question.</h3><p>Internal testing had supported map-and-list exploration. Later testing showed many people overlooked the map or questioned its purpose. The final presentation records its removal from the delivered experience.</p></div>
+            <div><span>FILTERS</span><h3>Useful filters still needed predictable logic.</h3><p>The report identified a specific mismatch: selecting several options in one category behaved like AND, while testers expected OR. Long lists and unfamiliar labels added friction. The report recommended OR within a category; the design research documents simpler groups and an age-range slider among the later improvements.</p></div>
+            <div><span>MAP</span><h3>Being visible wasn't the same as being useful.</h3><p>Internal testing had supported map-and-list exploration. The later results report recorded strong average noticeability, but people who found the map still questioned its value compared with routing tools such as Google Maps. The final presentation and design research record its removal from the delivered experience.</p></div>
             <div><span>GUIDANCE & TRUST</span><h3>The words around the interface mattered.</h3><p>Participants valued the tutorial, but needed clearer location labels, more specific availability information, and a less ambiguous way to report incorrect details.</p></div>
           </div>
+          <div class="documented-changes"><span class="small-label">LATER CHANGES DOCUMENTED BY THE TEAM</span><h3>Turn the feedback into specific interface changes.</h3><ul><li>Make the entry point explicitly city-based and strengthen the landing page hierarchy.</li><li>Sort providers by availability, and replace age-group checkboxes with an age-range slider.</li><li>Make referral notices and availability labels clearer on provider cards.</li><li>Add saved-provider confirmation and a more helpful no-results experience.</li></ul><p>These are documented iterations, not evidence of a measured post-redesign uplift.</p></div>
+          <p>The report also showed only a modest change in self-reported provider confidence, from 7.64 to 8.06 out of 10 during the task. Completing a search did not fully resolve whether a provider would feel like a good fit before the first contact.</p>
           <aside class="research-note"><strong>What the results can—and cannot—tell us</strong><p>This was guided usability testing, with limited representation from the target community. The findings helped identify usability problems; they do not establish clinical outcomes, long-term adoption, or improved access to care.</p></aside>
         </section>
 
@@ -147,7 +199,7 @@
           <p class="source-note">The admin site requires authentication. Its responsibilities are described from the final presentation; protected screens are not reproduced here.</p>
           <figure class="case-figure team-figure"><img src="assets/fnha-case/team-process.webp" alt="Team Trestle collaborating with sticky notes and whiteboard sketches during the project" width="650" height="290" loading="lazy"><figcaption>A shared process: team discussions, whiteboard exploration, and continuous refinement. From the final presentation.</figcaption></figure>
           <div class="reflection-list"><div><h3>Research should change the scope.</h3><p>The value of testing was not just improving a screen. It helped the team reconsider the map, explore connectivity, and align the final work with the client's actual priorities.</p></div><div><h3>Mobile design is an information problem.</h3><p>Moving a desktop layout onto a phone is only the beginning. The more important work is deciding what deserves attention first and making each next step understandable.</p></div><div><h3>Keep listening beyond the prototype.</h3><p>With only three First Nations participants in the external round, continued community involvement would be an important next step before making broader claims about cultural appropriateness and impact.</p></div></div>
-          <details class="case-sources"><summary>Project materials</summary><p>Sources: Team Trestle’s final presentation, the June 10 and June 17 internal reviews, the July 8 external-testing review, and the team’s FigJam brainstorm. My responsibilities and final scope are confirmed from my project account.</p><p>Internal survey findings, external usability feedback, explored concepts, and delivered functionality are distinguished throughout this case study.</p></details>
+          <details class="case-sources"><summary>Project materials</summary><p>Sources: Team Trestle’s final and stage presentations; the FigJam brainstorm; Art &amp; Design Research; the July 7 external testing plan and its linked task-and-survey draft; and the external results analysis of 33 completed questionnaires. My responsibilities, the 35+ overall participants including 3 First Nations users, and the final offline/admin scope are confirmed from my project account.</p><p>Internal survey findings, external usability feedback, explored concepts, and documented iterations are distinguished throughout this case study. The external test was guided, its sample was not broadly representative of all intended users, and the results are not clinical or production outcomes.</p></details>
         </section>
         <footer class="case-footer"><a href="./#work">← Back to all work</a><a href="#case-content">Back to top ↑</a><span>Yixuan Liu · Product Designer</span></footer>
       </article>

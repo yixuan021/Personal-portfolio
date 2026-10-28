@@ -31,3 +31,7 @@ The font is Montserrat, loaded from Google Fonts with a local Arial fallback. Im
 `fnha.html`, `case-study.css` and `case-study.js` present the May–August 2026 project. Yixuan’s confirmed responsibilities are early UX research, mobile interface design and user test planning. The story distinguishes internal test findings from external feedback, and explored offline/SMS ideas from the final online platform and extra admin website. External participation is reported as 35+ people, including 3 First Nations participants, as confirmed by Yixuan.
 
 Process images are in `assets/fnha-case/`. Editing links to source decks and internal boards are not included on the public page.
+
+### Additional research evidence
+
+The case study now includes the July 7 mobile task scenario (Prince George, Indigenous provider, current availability or a wait under one month, then save), co-planning responsibilities with Bam, and the expandable-map testing hypothesis. Overall participation (35+) is distinguished from the 33 complete questionnaires in the results analysis. Survey results are self-reported within a guided test, not a post-redesign or production comparison. The art/design research supports the new wireframe and design-foundations content; artwork is credited to the team with Andrea as art lead. Source PDFs and raw participant-level observations remain outside the public repository.
