@@ -36,3 +36,11 @@ if (document.body.classList.contains('case-page')) {
   updateHeaderHeight();
   new ResizeObserver(updateHeaderHeight).observe(header);
 }
+
+// Replay the entrance when the browser restores a previously visited page.
+window.addEventListener('pageshow', event => {
+  if (!event.persisted || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  document.querySelectorAll('main, .case-header').forEach(element => {
+    element.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 480, easing: 'ease-out' });
+  });
+});
