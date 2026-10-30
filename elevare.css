@@ -42,3 +42,9 @@
 .elevare-page .process-photo:has(.photo-paper-prototype){max-width:480px}
 .elevare-page .process-photo:has(.photo-paper-prototype) .zoom-image{aspect-ratio:4/3}
 .elevare-page .process-photo .photo-paper-prototype{object-position:50% 45%}
+/* Keep the implemented practice loop within ELEVARE’s blue palette. */
+.elevare-page .task-scenario{background:#eef5fa;border-color:var(--case-line)}
+.elevare-page .task-steps li{border-top-color:var(--case-line)}
+.elevare-page .task-steps li:before{background:#dceaf4;color:#456e89}
+.elevare-page .task-steps span,.elevare-page .task-scenario>p,.elevare-page .finding-decision p{color:var(--case-muted)}
+.elevare-page .flow-details summary{color:#456e89}

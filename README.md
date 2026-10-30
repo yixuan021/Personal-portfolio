@@ -51,3 +51,16 @@ The four process photographs use compact, cropped previews (600px maximum width 
 The AI Bot TDD confirms a developed Unity 2023.2.20 Windows desktop prototype at 1280×720, with free-text input, Google Apps Script/JSON communication with Gemini 2.0 Flash, live replies, and end-of-conversation feedback. The case study prominently connects this implementation to the High Fidelity Playtest interaction flow, while identifying the Figma screens as mobile-format interface designs. The separate narrative browser prototype uses authored dialogue and Firebase two-player synchronisation; it does not generate dialogue live. The source TDDs remain outside the public repository.
 
 The Team field identifies Project 1C as a CDM project. The personal narrative foregrounds Yixuan’s documented UI contributions, personas and flows, and AI Bot interviews. The reflection section connects these artifacts with transferable product design strengths and grounded lessons, without attributing the Unity engineering or shared design system to Yixuan.
+
+
+## GroundLink — local addition
+
+The third homepage card opens `groundlink.html`. The case study shares the existing nine-section layout, navigation, image viewer, responsive rules and video controls. `legacy-cases.css` supplies restrained green accents. Every Works dropdown links to GroundLink.
+
+GroundLink plays its complete original project video on the homepage and in the case-study hero: `assets/groundlink-original-video.mp4` (4:56.92), with its extracted poster. The hero has no phone overlay. The original source is YouTube video `Mtt5_goxfVw`. Playback is muted, loops, pauses off-screen, respects reduced motion and has independent pause controls.
+
+The final interactive Figma mockup is linked near the top of the case study, both in the project header and directly below the introduction. It opens the original final-prototype starting frame in a new tab. The delivery section also retains the prototype and original video links.
+
+Content is adapted from Yixuan’s original Framer case study. It highlights persona writing, grey-box wireframes, copy, Figma styles, video editing and communication, while distinguishing individual contributions from team outputs. The original account reports three prototype test participants.
+
+The selected portfolio contains FNHA, ELEVARE Connect and GroundLink. Removed project files are retained only in the ignored local work folder. Updates are published from the `main` branch through GitHub Pages.

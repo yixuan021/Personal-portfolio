@@ -64,3 +64,8 @@ dialog{border:0;border-radius:16px;padding:54px 44px 40px;max-width:500px;width:
 @media(max-width:760px){.site-header{flex-wrap:wrap;gap:20px;justify-content:center}.site-header .wordmark{margin-right:auto}.portfolio-nav{max-width:100%;gap:0;padding:4px}.pill-link{font-size:11px;padding:0 9px;min-height:35px}.nav-separator{margin:0 3px}.works-list{left:-20px;width:min(300px,calc(100vw - 48px))}.personal-view{grid-template-columns:1fr;gap:45px;margin:65px 24px 0;min-height:0}.personal-copy h1{font-size:44px;letter-spacing:-1.3px}.personal-copy .personal-lead{font-size:17px}.personal-copy p{font-size:13px}.personal-portrait,.fun-art{max-width:340px}.case-page .case-header{padding:0 24px}}
 @media(prefers-reduced-motion:no-preference){.personal-copy,.personal-portrait,.fun-art{animation:intro-reveal 800ms cubic-bezier(.25,0,0,1) both}.personal-portrait,.fun-art{animation-delay:160ms}}
 @media(max-width:380px){.portfolio-nav .pill-link{font-size:10px;padding:0 7px;gap:4px}.nav-separator{margin:0 2px}}
+
+.project-groundlink .project-media,.project-groundlink .project-cover{background:#e6efdf}
+
+/* Preserve the original GroundLink film’s widescreen composition. */
+.project-groundlink .project-video{aspect-ratio:320/169}
