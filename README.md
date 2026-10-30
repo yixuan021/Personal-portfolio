@@ -6,7 +6,7 @@ Live website: https://yixuan021.github.io/Personal-portfolio/
 
 The first project is First Nations Health Authority. Its 10-second muted loop demonstrates the supplied FNHA demo: typing Vancouver, selecting the city and a preference, searching, scrolling the directory, opening and closing provider details, scrolling back, and returning home. Actual browser captures are edited with a visible pointer and click indicators; matching opening and ending frames make the loop continuous. The cover opens `fnha.html`, an independent project case study. The case study links to the public prototype and the separate admin sign-in. A “See my project ↗” cursor follows the mouse over the cover; touch and keyboard users have a visible project link. The preview has a pause/play control, pauses off-screen, and starts paused when reduced motion is preferred.
 
-The board's charm, note and photo open accessible dialogs. Work returns to the homepage; Play and About open their respective content. Escape or a click outside closes dialogs.
+The shared pink capsule navigation contains Works, Fun, About and Resume. The Yixuan Liu wordmark returns to the homepage. Works opens a project dropdown with direct case-study links and a link to all work. Hover uses pale pink; the current page stays selected in rose pink. The menu supports touch, keyboard, Escape and outside-click dismissal. Fun and About have separate pages. Resume opens the linked Google Drive PDF in a new tab. The board's charm, note and photo still open accessible dialogs. Escape or a click outside closes dialogs.
 
 ## Preview
 

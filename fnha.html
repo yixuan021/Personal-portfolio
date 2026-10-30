@@ -6,16 +6,33 @@
   <meta name="theme-color" content="#eef1eb">
   <meta name="description" content="Yixuan Liu's FNHA case study: early UX research, mobile interface design, and usability test planning for a mental health provider discovery platform.">
   <title>FNHA — Yixuan Liu</title>
-  <link rel="icon" href="assets/cursor.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="case-study.css?v=visual-story-4">
   <script src="case-study.js" defer></script>
+  <script src="navigation.js" defer></script>
 </head>
 <body class="case-page">
   <a class="skip-link" href="#case-content">Skip to case study</a>
-  <header class="case-header">
+  <header class="site-header">
+    <a class="wordmark" href="./" aria-label="Yixuan Liu, home">Yixuan Liu</a>
+    <nav class="portfolio-nav" aria-label="Main navigation">
+      <div class="works-menu">
+        <button class="pill-link works-trigger is-current" type="button" aria-expanded="false" aria-controls="works-list">Works <svg class="nav-chevron" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="m2 4 3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="works-list" id="works-list" hidden>
+          <span class="nav-menu-label">SELECTED WORK</span>
+          <a href="fnha.html" aria-current="page"><strong>First Nations Health Authority</strong><span>Mental health &amp; primary care</span><span class="menu-arrow" aria-hidden="true">↗</span></a>
+          <a href="elevare.html"><strong>ELEVARE Connect</strong><span>AI conversation practice</span><span class="menu-arrow" aria-hidden="true">↗</span></a>
+          <a class="all-work-link" href="./#work">View all work <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <a class="pill-link" href="fun.html">Fun</a>
+      <a class="pill-link" href="about.html">About</a>
+      <span class="nav-separator" aria-hidden="true"></span>
+      <a class="pill-link resume-link" href="https://drive.google.com/file/d/155vEEcQ53P3VuCx9Ew82T92FQnsxPeMG/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" aria-label="Resume (opens in a new tab)">Resume <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header><header class="case-header">
     <a class="back-link" href="./#work"><span aria-hidden="true">←</span> All work</a>
-    <a class="case-wordmark" href="./">Yixuan Liu</a>
     <a class="header-demo" href="https://trestle-fnha-web.vercel.app/" target="_blank" rel="noopener noreferrer">Try the product <span aria-hidden="true">↗</span></a>
   </header>
   <main>

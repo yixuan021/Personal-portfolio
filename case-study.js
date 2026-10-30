@@ -58,7 +58,8 @@ let scrollPending = false;
 function updateSection() {
   scrollPending = false;
   let current = sections[0];
-  for (const section of sections) { if (section.getBoundingClientRect().top <= 140) current = section; }
+  const sectionTop = document.querySelector('.site-header').getBoundingClientRect().bottom + 25;
+  for (const section of sections) { if (section.getBoundingClientRect().top <= sectionTop) current = section; }
   for (const link of sectionLinks) {
     if (link.hash === '#' + current.id) link.setAttribute('aria-current','location');
     else link.removeAttribute('aria-current');
