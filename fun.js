@@ -3,8 +3,7 @@ const funProjects = {
     title: 'Pavilion in the Park',
     description: 'A team project in Rhino, Grasshopper, and Twinmotion. My focus: modelling, mockups, and writing.',
     slides: [
-      { type: 'video', src: 'assets/fun/pavilion-film.mp4', poster: 'assets/fun/pavilion.webp', alt: 'Pavilion in the Park — full architectural film' },
-      { type: 'image', src: 'assets/fun/pavilion.webp', alt: 'Flower and Sculpture pavilion in a tree-filled park' }
+      { type: 'video', src: 'assets/fun/pavilion-film.mp4', poster: 'assets/fun/pavilion.webp', alt: 'Pavilion in the Park — full architectural film' }
     ]
   },
   bathhouse: {
