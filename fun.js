@@ -5,9 +5,6 @@ const funProjects = {
     slides: [
       { type: 'video', src: 'assets/fun/pavilion-film.mp4', poster: 'assets/fun/pavilion.webp', alt: 'Pavilion in the Park — full architectural film' },
       { type: 'image', src: 'assets/fun/pavilion.webp', alt: 'Flower and Sculpture pavilion in a tree-filled park' }
-    ],
-    links: [
-      { label: 'View project slides ↗', href: 'https://www.figma.com/proto/zqZNGatRru4iRuwupq5C7I/IAT336project2?page-id=129%3A6&node-id=129-7&scaling=contain&content-scaling=fixed' }
     ]
   },
   bathhouse: {
@@ -16,6 +13,9 @@ const funProjects = {
     slides: [
       { type: 'image', src: 'assets/fun/bathhouse-front.webp', alt: 'Front view of the handmade bathhouse, with a green roof, red walls, and miniature trees' },
       { type: 'image', src: 'assets/fun/bathhouse-rear.webp', alt: 'Another view of the bathhouse model and its landscaped base' }
+    ],
+    links: [
+      { label: 'View project slides ↗', href: 'https://www.figma.com/proto/zqZNGatRru4iRuwupq5C7I/IAT336project2?page-id=129%3A6&node-id=129-7&scaling=contain&content-scaling=fixed' }
     ]
   },
   gallery: {
