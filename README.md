@@ -92,3 +92,6 @@ The shared page background is `#FDFDFC`, sampled from the supplied October 31 re
 
 
 The homepage greeting scales up to 64px, while the footer slogan uses a smaller 28px maximum and the shared pink accent.
+
+
+On mobile, the name and navigation share one row, with the name on the left and the capsule on the right. Compact spacing supports narrow screens, and the Works dropdown aligns to the capsule’s right edge to stay within the viewport.
