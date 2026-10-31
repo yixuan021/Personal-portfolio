@@ -2,7 +2,20 @@
 .fun-intro{margin:84px 60px 54px;container-type:inline-size}
 .fun-intro h1{font-family:var(--font);font-size:var(--intro-title-size);font-weight:var(--intro-title-weight);line-height:var(--intro-title-line-height);letter-spacing:var(--intro-title-tracking);color:var(--pink);margin:0 0 20px}
 .fun-intro>p{font-size:16px;line-height:1.8;color:#756a72;margin:0}
-.fun-gallery{margin:0 60px;display:grid;grid-template-columns:1fr 1fr;gap:54px 30px;align-items:start}
+.fun-gallery{margin:0 60px;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:32px 26px;align-items:stretch}
+.fun-gallery>.fun-project{display:flex;flex-direction:column}
+.meownshine-project{grid-column:1/9;grid-row:1}
+.pavilion-project{grid-column:9/13;grid-row:1}
+.bathhouse-project{grid-column:1/5;grid-row:2/4}
+.gallery-project{grid-column:5/13;grid-row:2}
+.graphics-project{grid-column:5/13;grid-row:3}
+.fun-project>.fun-media-wrap{flex:1;min-height:0;display:flex}
+.fun-gallery .fun-media{aspect-ratio:auto;flex:1;min-height:0}
+.meownshine-project .fun-media-wrap,.pavilion-project .fun-media-wrap{height:clamp(300px,31vw,430px);flex:none}
+.gallery-project .fun-media-wrap,.graphics-project>.fun-media{height:clamp(230px,23vw,320px);flex:none}
+.bathhouse-project>.fun-media{height:100%}
+.fun-gallery .fun-caption{flex:none}
+.graphics-media img{padding:18px}
 .fun-project{min-width:0}
 .fun-media-wrap{position:relative}
 .fun-media{position:relative;display:block;width:100%;aspect-ratio:1.28;padding:0;border:0;border-radius:12px;overflow:hidden;cursor:pointer;text-align:left;background:var(--play-wash);isolation:isolate}
@@ -57,6 +70,19 @@
 .viewer-links a{font-size:11px;line-height:1.8;color:#a22e70;text-decoration:none;border-bottom:1px solid #e9bfd7;white-space:nowrap}
 @media(hover:hover){.fun-open:hover img{transform:scale(1.02)}}
 @media(min-width:1600px){.fun-intro{margin-top:100px}}
-@media(max-width:760px){.fun-intro{margin:58px 24px 36px}.fun-intro h1{max-width:460px}.fun-intro>p{font-size:14px;max-width:410px}.fun-gallery{margin:0 24px;gap:36px 18px}.fun-media{aspect-ratio:1;border-radius:9px}.bathhouse-media img,.graphics-media img{padding:10px}.fun-caption{gap:8px;margin-top:12px}.fun-caption h2{font-size:12px;line-height:1.6}.fun-caption p{font-size:10px}.fun-index{font-size:8px}.media-corner{bottom:10px;right:10px;padding:6px 9px;gap:8px;font-size:8px}.media-corner>span:last-child{font-size:13px}.fun-preview-toggle{left:10px;bottom:10px;font-size:8px;padding:6px 8px}.video-project .media-corner{font-size:0;gap:0}.video-project .media-corner>span:first-child{display:none}.fun-page .site-footer{margin-top:65px}.viewer-header{padding:17px 20px}.fun-viewer .viewer-header h2{font-size:19px}.viewer-slide{height:50dvh;padding:10px}.viewer-navigation{gap:8px;padding:10px 12px}.viewer-footer{display:block;padding:17px 20px}.fun-viewer .viewer-footer p{font-size:11px}.viewer-links{margin-top:12px}.viewer-links:empty{margin:0}.fun-viewer{width:94vw;max-height:94dvh}.viewer-dots{gap:0}.viewer-dots button{width:23px}}
-@media(max-width:480px){.fun-gallery{grid-template-columns:1fr;gap:32px}.fun-media{aspect-ratio:1.15}.fun-caption h2{font-size:14px}.fun-caption p{font-size:11px}.fun-index{font-size:9px}.media-corner{font-size:9px}.video-project .media-corner{font-size:9px;gap:9px}.video-project .media-corner>span:first-child{display:inline}.fun-preview-toggle{font-size:9px}.fun-intro h1{max-width:340px}}
+@media(min-width:761px) and (max-width:1000px){
+.fun-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:34px 22px}
+.meownshine-project{grid-column:1/-1;grid-row:1}
+.pavilion-project{grid-column:1;grid-row:2}
+.bathhouse-project{grid-column:2;grid-row:2/4}
+.gallery-project{grid-column:1;grid-row:3}
+.graphics-project{grid-column:1/-1;grid-row:4}
+.meownshine-project .fun-media-wrap{height:auto;aspect-ratio:16/9}
+.pavilion-project .fun-media-wrap,.gallery-project .fun-media-wrap{height:auto;aspect-ratio:4/3}
+.graphics-project>.fun-media{height:290px}
+}
+@media(max-width:760px){.fun-intro{margin:58px 24px 36px}.fun-intro h1{max-width:460px}.fun-intro>p{font-size:14px;max-width:410px}.fun-gallery{margin:0 24px;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 18px}.fun-gallery>.fun-project{grid-column:auto;grid-row:auto}.fun-gallery>.meownshine-project{grid-column:1/-1}.fun-gallery .fun-media-wrap,.fun-gallery .fun-project>.fun-media{height:auto;aspect-ratio:1.12;flex:none}.fun-gallery .fun-media-wrap .fun-media{height:100%}.fun-gallery .meownshine-project .fun-media-wrap{aspect-ratio:16/9}.fun-media{aspect-ratio:1;border-radius:9px}.bathhouse-media img,.graphics-media img{padding:10px}.fun-caption{gap:8px;margin-top:12px}.fun-caption h2{font-size:12px;line-height:1.6}.fun-caption p{font-size:10px}.fun-index{font-size:8px}.media-corner{bottom:10px;right:10px;padding:6px 9px;gap:8px;font-size:8px}.media-corner>span:last-child{font-size:13px}.fun-preview-toggle{left:10px;bottom:10px;font-size:8px;padding:6px 8px}.video-project .media-corner{font-size:0;gap:0}.video-project .media-corner>span:first-child{display:none}.fun-page .site-footer{margin-top:65px}.viewer-header{padding:17px 20px}.fun-viewer .viewer-header h2{font-size:19px}.viewer-slide{height:50dvh;padding:10px}.viewer-navigation{gap:8px;padding:10px 12px}.viewer-footer{display:block;padding:17px 20px}.fun-viewer .viewer-footer p{font-size:11px}.viewer-links{margin-top:12px}.viewer-links:empty{margin:0}.fun-viewer{width:94vw;max-height:94dvh}.viewer-dots{gap:0}.viewer-dots button{width:23px}}
+@media(max-width:480px){.fun-gallery{grid-template-columns:1fr;gap:32px}.fun-gallery .fun-media-wrap,.fun-gallery .fun-project>.fun-media{aspect-ratio:1.15}.fun-gallery .meownshine-project .fun-media-wrap,.fun-gallery .gallery-project .fun-media-wrap{aspect-ratio:16/9}.fun-media{aspect-ratio:1.15}.fun-caption h2{font-size:14px}.fun-caption p{font-size:11px}.fun-index{font-size:9px}.media-corner{font-size:9px}.video-project .media-corner{font-size:9px;gap:9px}.video-project .media-corner>span:first-child{display:inline}.fun-preview-toggle{font-size:9px}.fun-intro h1{max-width:340px}}
 @media(prefers-reduced-motion:reduce){.fun-media img,.fun-media video,.media-corner,.viewer-dots button::before{transition:none}}
+
+.meownshine-media{background:#211d1c}.meownshine-media video{object-fit:contain}

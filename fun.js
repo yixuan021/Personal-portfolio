@@ -1,4 +1,14 @@
 const funProjects = {
+  meownshine: {
+    title: 'Meownshine Express Co.',
+    description: 'Grow ingredients, brew on the road, and keep a food-truck front running in this student-made simulation game.',
+    slides: [
+      { type: 'video', src: 'assets/fun/meownshine-trailer.mp4', poster: 'assets/fun/meownshine-poster.webp', alt: 'Meownshine Express Co. — full game trailer' }
+    ],
+    links: [
+      { label: 'Play on itch.io ↗', href: 'https://yutzune.itch.io/meownshine-express-co' }
+    ]
+  },
   pavilion: {
     title: 'Pavilion in the Park',
     description: 'A team project in Rhino, Grasshopper, and Twinmotion. My focus: modelling, mockups, and writing.',

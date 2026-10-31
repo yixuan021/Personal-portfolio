@@ -68,7 +68,7 @@ The selected portfolio contains FNHA, ELEVARE Connect and GroundLink. Removed pr
 
 ## Fun — creative gallery
 
-`fun.html`, `fun.css`, and `fun.js` replace the temporary introduction with a four-project creative gallery inspired by the referenced Rebecca Yang Playground layout, while keeping the portfolio’s typography, pink palette, navigation, and footer. The introduction retains only “A little room to play.” and its subtitle. The pink dog, long introductory copy, and back-to-home action are removed from this page.
+`fun.html`, `fun.css`, and `fun.js` replace the temporary introduction with a five-project creative gallery inspired by the referenced Rebecca Yang Playground layout, while keeping the portfolio’s typography, pink palette, navigation, and footer. The introduction retains only “A little room to play.” and its subtitle. The pink dog, long introductory copy, and back-to-home action are removed from this page.
 
 Original assets come from Yixuan’s Framer Playground. Pavilion in the Park has a muted inline preview and a full 31-second project film with audio controls in the viewer. Pavilion contains only the film: no image carousel or slides link. Spirited Away Bathhouse opens a two-photo carousel and includes the original Figma slide-deck link. Reimagined Gallery replaces the kitchen render with a 22-second silent source-footage preview and the complete original virtual-gallery film (`O92a-MQosUc`) in the viewer. Its subtitle is “Step inside the artwork, beyond the frame.” The six graphic designs are grouped as one “Graphic explorations” entry, with one cover on the gallery and all six available in a swipeable viewer. The old font/album category labels are omitted. Each entry has a title and a short description; the pavilion viewer also preserves Yixuan’s modelling, mockup, and writing contribution.
 
@@ -95,3 +95,15 @@ The homepage greeting scales up to 64px, while the footer slogan uses a smaller 
 
 
 On mobile, the name and navigation share one row, with the name on the left and the capsule on the right. Compact spacing supports narrow screens, and the Works dropdown aligns to the capsule’s right edge to stay within the viewport.
+
+
+### Meownshine Express Co.
+
+The new first Fun entry presents the supplied Meownshine Express trailer, with a muted inline preview, full trailer playback with audio controls in the shared viewer, and a “Play on itch.io” link to the released game. The title follows the game page; the subtitle is “Grow by day. Brew on the run.” The short description is based on the game’s published farming, brewing, and food-truck premise. No individual role is inferred from the team credit. Existing projects retain their order and are renumbered 02–05.
+
+Source trailer: the supplied Drive file `1udKQd-C0gqjQCMoRLBrUEqPrOH9GxAQl`. Game: https://yutzune.itch.io/meownshine-express-co. The source remains in the ignored local work directory; optimised video assets are in `assets/fun/`. The game entry is published with the portfolio through GitHub Pages.
+
+
+### Fun gallery layout
+
+The Fun page uses an asymmetric bento composition: a wide lead game trailer beside the smaller pavilion tile, with a tall bathhouse photograph alongside stacked landscape and graphic tiles. Medium screens rearrange into two columns, and narrow phones use a single-column sequence. Project order, captions, video controls and the shared viewer are preserved. The layout is published with the portfolio through GitHub Pages.
