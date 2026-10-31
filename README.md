@@ -73,3 +73,22 @@ The selected portfolio contains FNHA, ELEVARE Connect and GroundLink. Removed pr
 Original assets come from Yixuan’s Framer Playground. Pavilion in the Park has a muted inline preview and a full 31-second project film with audio controls in the viewer. Pavilion contains only the film: no image carousel or slides link. Spirited Away Bathhouse opens a two-photo carousel and includes the original Figma slide-deck link. Reimagined Gallery replaces the kitchen render with a 22-second silent source-footage preview and the complete original virtual-gallery film (`O92a-MQosUc`) in the viewer. Its subtitle is “Step inside the artwork, beyond the frame.” The six graphic designs are grouped as one “Graphic explorations” entry, with one cover on the gallery and all six available in a swipeable viewer. The old font/album category labels are omitted. Each entry has a title and a short description; the pavilion viewer also preserves Yixuan’s modelling, mockup, and writing contribution.
 
 The native dialog supports Escape, backdrop dismissal, focus restoration, previous/next controls, slide dots, arrow keys and horizontal scrolling with scroll snap. Inline video pauses when off-screen, when the tab is hidden, or while the viewer is open. Closing the viewer stops its film; reduced motion starts previews paused. Desktop and narrow-screen layouts, all six graphic slides, navigation, media loading, and playback controls have been checked locally. The gallery and shared page fade-in are published with the portfolio through GitHub Pages.
+
+
+## Contact footer
+
+All six pages end with “Turning complex systems into usable experiences.” The footer uses the existing Montserrat typography, rose accents, a subtle divider and underlined text links. LinkedIn opens the supplied profile, Email uses `mailto:liuyixuan2002021@gmail.com`, and Resume reuses the navigation’s Google Drive link. Desktop uses a two-column composition; mobile stacks the message above the links. Project back/top navigation remains above this footer.
+
+
+## Homepage project hover
+
+The three selected-work covers smoothly shrink to 90% on mouse hover and return to full size on exit (650ms eased transition). The unscaled project wrapper keeps the hover target and captions stable. Keyboard focus has the same treatment. Touch screens keep the regular cover size, and reduced-motion preference disables the scale effect. Existing videos, preview controls and case-study links are retained.
+
+
+The homepage header now stays at the top while scrolling, matching the case-study header’s translucent background and blur. The name and full navigation stay together; the selected-work anchor accounts for the header’s responsive height.
+
+
+The shared page background is `#FDFDFC`, sampled from the supplied October 31 reference screenshot. Sticky headers use the same warm white with translucency; project artwork and cover palettes remain unchanged.
+
+
+The homepage greeting scales up to 64px, while the footer slogan uses a smaller 28px maximum and the shared pink accent.
