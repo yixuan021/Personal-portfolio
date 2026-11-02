@@ -55,7 +55,7 @@ dialog{border:0;border-radius:16px;padding:54px 44px 40px;max-width:500px;width:
 .works-list .all-work-link{border-top:1px solid var(--nav-border);border-radius:0 0 10px 10px;margin-top:6px;font-size:10px;font-weight:600;display:flex;align-items:center;justify-content:space-between;padding:13px 12px}.works-list .all-work-link>span{margin:0}
 @keyframes nav-menu-in{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
 .case-page .case-header{height:60px}
-.case-page .site-header,.home-page .site-header{position:sticky;top:0;background:#fdfdfcf5;backdrop-filter:blur(12px)}
+.site-header{position:sticky;top:0;background:#fdfdfcf5;backdrop-filter:blur(12px)}
 .case-page .case-contents{top:calc(var(--portfolio-header-height,118px) + 24px)}
 .case-page [id]{scroll-margin-top:calc(var(--portfolio-header-height,118px) + 24px)}
 .personal-view{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:90px;align-items:center;margin:100px 90px 0 60px;min-height:420px}

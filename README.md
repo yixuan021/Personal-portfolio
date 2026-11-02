@@ -107,3 +107,20 @@ Source trailer: the supplied Drive file `1udKQd-C0gqjQCMoRLBrUEqPrOH9GxAQl`. Gam
 ### Fun gallery layout
 
 The Fun page uses an asymmetric bento composition: a wide lead game trailer beside the smaller pavilion tile, with a tall bathhouse photograph alongside stacked landscape and graphic tiles. Medium screens rearrange into two columns, and narrow phones use a single-column sequence. Project order, captions, video controls and the shared viewer are preserved. The layout is published with the portfolio through GitHub Pages.
+
+## About (November 1, 2026)
+
+`about.html`, `about.css`, and `about.js` now contain a personality-led introduction, a three-photo stack, and a chronological Journey section inspired by the supplied Rebecca Yang and Prachi Pandey references. The new copy draws on Yixuan's original Framer About and LinkedIn profile, with project contributions checked against the existing case studies. LinkedIn confirms SFU (September 2020–June 2025) and CDM (September 2025–June 2027; shown as expected completion). FNHA and ELEVARE are explicitly labelled as projects, not employment.
+
+The photo stack supports click, horizontal drag/swipe, Enter/Space, and arrow keys. It cycles without autoplay, announces the photo count, and respects reduced motion. All initial photos have been replaced with Yixuan’s three supplied personal photos: a storybook-street visit, her PinkyDoggy booth, and a photo beside Rilakkuma. Browser-compatible resized JPEG copies live in `assets/about/`; original uploads are unchanged. Click, drag, and keyboard photo flipping are restored. The introduction also mentions PinkyDoggy, confirmed in the earlier “Portfolio元素建议” chat as her small business and side hustle. About styling is scoped in its own stylesheet; other pages retain their existing appearance. The About update includes the personal photo stack, revised experience and education, and shared sticky navigation.
+
+
+### Journey content revision
+
+Journey now focuses on work/community experience (Social Media Marketing at Vancouver Service Design Jam, Marketing Associate at SFU VentureLabs, and Public Relations Assistant at CJSF 90.1 FM) and academic experience (CDM Master of Digital Media and SFU BA). Roles, work dates, and honours come from the linked current resume; education dates were confirmed against LinkedIn. Portfolio project entries and project descriptions are excluded, including from the education copy.
+
+
+Journey now also includes the resume-confirmed client collaborations explicitly requested by Yixuan: UI/UX Designer with First Nations Health Authority (May–August 2026) and UX Designer with Huawei (January–April 2026). Both are labelled Client Project, with concise resume-based responsibilities.
+
+
+The shared site header is sticky across every page, including Fun and About. The wordmark, full navigation, translucent background, blur, and stacking order use one common rule. Header-height measurement also runs on every page.

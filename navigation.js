@@ -28,7 +28,7 @@ document.addEventListener('click', event => {
 worksList.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setWorksOpen(false)));
 
 // Keep section links and the case-study contents clear of the sticky header.
-if (document.body.matches('.case-page, .home-page')) {
+if (document.querySelector('.site-header')) {
   const header = document.querySelector('.site-header');
   const updateHeaderHeight = () => {
     document.body.style.setProperty('--portfolio-header-height', `${header.getBoundingClientRect().height}px`);

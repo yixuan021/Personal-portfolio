@@ -86,3 +86,6 @@
 @media(prefers-reduced-motion:reduce){.fun-media img,.fun-media video,.media-corner,.viewer-dots button::before{transition:none}}
 
 .meownshine-media{background:#211d1c}.meownshine-media video{object-fit:contain}
+
+/* Keep Fun navigation pinned, matching the shared About and project header. */
+.fun-page .site-header{position:sticky;top:0;z-index:20;background:#fdfdfcf5;backdrop-filter:blur(12px)}
