@@ -116,3 +116,8 @@ dialog{border:0;border-radius:16px;padding:54px 44px 40px;max-width:500px;width:
 
 /* Keep homepage section links clear of the sticky header at every size. */
 .home-page #work{scroll-margin-top:calc(var(--portfolio-header-height,118px) + 24px)}
+
+/* Shared display scale for the homepage and project introductions. */
+:root{--portfolio-title-size:clamp(38px,5.4vw,68px);--portfolio-title-weight:600;--portfolio-title-leading:1.08;--portfolio-title-tracking:-2.5px;--portfolio-deck-size:18px;--portfolio-deck-leading:1.75}
+@media(max-width:1100px){:root{--portfolio-deck-size:16px}}
+@media(max-width:760px){:root{--portfolio-title-size:40px;--portfolio-title-tracking:-1.6px;--portfolio-deck-size:15px;--portfolio-deck-leading:1.8}}

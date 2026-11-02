@@ -6,7 +6,7 @@ Live website: https://yixuan021.github.io/Personal-portfolio/
 
 The first project is First Nations Health Authority. Its 10-second muted loop demonstrates the supplied FNHA demo: typing Vancouver, selecting the city and a preference, searching, scrolling the directory, opening and closing provider details, scrolling back, and returning home. Actual browser captures are edited with a visible pointer and click indicators; matching opening and ending frames make the loop continuous. The cover opens `fnha.html`, an independent project case study. The case study links to the public prototype and the separate admin sign-in. A “See my project ↗” cursor follows the mouse over the cover; touch and keyboard users have a visible project link. The preview has a pause/play control, pauses off-screen, and starts paused when reduced motion is preferred.
 
-The shared pink capsule navigation contains Works, Fun, About and Resume. The Yixuan Liu wordmark returns to the homepage. Works opens a project dropdown with direct case-study links and a link to all work. Hover uses pale pink; the current page stays selected in rose pink. The menu supports touch, keyboard, Escape and outside-click dismissal. Fun and About have separate pages. Resume opens the linked Google Drive PDF in a new tab. The board's charm, note and photo still open accessible dialogs. Escape or a click outside closes dialogs.
+The shared pink capsule navigation contains Works, Fun, About and Resume. The Yixuan Liu wordmark returns to the homepage. Works opens a project dropdown with direct case-study links and a link to all work. Hover uses pale pink; the current page stays selected in rose pink. The menu supports touch, keyboard, Escape and outside-click dismissal. Fun and About have separate pages. Resume opens the linked Google Drive PDF in a new tab. The homepage now uses a typography-led introduction with a small portrait linking to About.
 
 ## Preview
 
@@ -18,9 +18,9 @@ In the repository's **Settings → Pages**, choose **Deploy from a branch**, the
 
 ## Editing
 
-- `index.html`: biography and board contents
+- `index.html`: introduction and selected project content
 - `style.css`: layout, colors and responsive behavior
-- `script.js`: board interactions
+- `script.js`: project cursor and video preview interactions
 - `assets/`: original Figma images and vector assets
 - `assets/fnha-preview.mp4` and `assets/fnha-poster.webp`: project cover video and static fallback
 
@@ -124,3 +124,10 @@ Journey now also includes the resume-confirmed client collaborations explicitly 
 
 
 The shared site header is sticky across every page, including Fun and About. The wordmark, full navigation, translucent background, blur, and stacking order use one common rule. Header-height measurement also runs on every page.
+
+
+## Homepage redesign (November 2, 2026)
+
+The corkboard has been replaced with a typography-led product design introduction inspired by Muhammad Zohaib and Abhinandan Gupta’s portfolio sites. A small existing personal photo links to About; the headline highlights Product Designer and clarity, using the existing Montserrat, warm white, and rose palette. Selected work adds problem-led titles and documented individual contributions, while retaining the three case-study links, original videos, pause controls, and shared navigation/footer. `home.css` scopes the new appearance to the homepage. Obsolete board dialogs and their script handlers are removed; the original image assets remain available. This revision is published through the existing GitHub Pages deployment.
+
+The final homepage uses a centered introduction with left-aligned text, “Hey, I’m Yixuan.” and a pink monospace “I do — Product Design & Research” line. Intro copy is general and excludes client names. The new portrait is `assets/about/home-portrait.jpg`, converted from the supplied HEIC, presented vertically, and clickable to reveal a greeting. The homepage and case-study titles share display tokens. Project-role captions and all six “View all work” menu arrows are removed.
