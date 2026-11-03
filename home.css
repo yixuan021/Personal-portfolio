@@ -46,4 +46,22 @@
  
  .home-page .project+.project{margin-top:47px}
 }
-@media(prefers-reduced-motion:no-preference){.home-hello,.home-intro h1,.home-intro-bottom{animation:intro-reveal 700ms cubic-bezier(.25,0,0,1) both}.home-intro h1{animation-delay:90ms}.home-intro-bottom{animation-delay:180ms}}
+/* Real spaces between words preserve natural wrapping and selectable text.
+   Only individual words move, so the surrounding layout stays in place. */
+.home-intro .intro-word{display:inline-block}
+.home-intro h1{--intro-start:180ms;--intro-stagger:150ms}
+.home-profession{--intro-start:525ms;--intro-stagger:100ms}
+.home-intro-lead{--intro-start:825ms;--intro-stagger:55ms}
+@keyframes home-word-enter{
+ from{opacity:0;transform:translateY(10px)}
+ to{opacity:1;transform:translateY(0)}
+}
+@media(prefers-reduced-motion:no-preference){
+ .home-intro .intro-word{
+  animation:home-word-enter 975ms cubic-bezier(.22,1,.36,1) both;
+  animation-delay:calc(var(--intro-start) + var(--word-index)*var(--intro-stagger));
+ }
+ .home-hello{animation:intro-reveal 1050ms cubic-bezier(.25,0,0,1) both}
+ .profession-rule{animation:home-word-enter 975ms cubic-bezier(.22,1,.36,1) 625ms both}
+ .home-intro-detail{animation:home-word-enter 1050ms cubic-bezier(.22,1,.36,1) 1650ms both}
+}
